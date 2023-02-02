@@ -14,6 +14,8 @@
     "esModuleInterop": true,
     // Позволяет использовать import ... from ... вместо import * as ... from ...
     "allowSyntheticDefaultImports": true,
+    // for absolute imports
+    "baseUrl": "."
   },
   "ts-node": {
     "compilerOptions": {
