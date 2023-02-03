@@ -4,9 +4,8 @@
     // Заставляет явно писать any
     "noImplicitAny": true,
     "module": "ESNext",
-    // В какую версию компилируем
-    "target": "es5",
-    "jsx": "react",
+    "target": "es5", // what version we compile in
+    "jsx": "react-jsx", // remove message about import React from 'react'
     // Позволяет компилятору обрабатывать не только ts, но и js файлы
     "allowJs": true,
     "moduleResolution": "node",
