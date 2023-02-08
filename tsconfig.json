@@ -14,7 +14,10 @@
     // Позволяет использовать import ... from ... вместо import * as ... from ...
     "allowSyntheticDefaultImports": true,
     // for absolute imports
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    }
   },
   "ts-node": {
     "compilerOptions": {
