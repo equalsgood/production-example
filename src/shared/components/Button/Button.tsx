@@ -8,15 +8,15 @@ export enum VariantButton {
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     className?: string;
-    theme?: VariantButton;
+    variant?: VariantButton;
 }
 
 export const Button:FC<ButtonProps> = (props) => {
-    const {className, children, theme, ...otherProps} = props;
+    const {className, children, variant, ...otherProps} = props;
 
     return (
         <button
-            className={classNames(cls.button, {}, [className, cls[theme]])}
+            className={classNames(cls.button, {}, [className, cls[variant]])}
             {...otherProps}
         >
             {children}
