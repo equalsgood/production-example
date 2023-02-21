@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
 import { LangSwitcher } from 'widgets/LangSwitcher';
 import { useTranslation } from 'react-i18next';
+import { Button } from 'shared/components/Button/Button';
 import cls from './Sidebar.module.scss';
-import { Button } from '../../../../shared/components/Button/Button';
 
 interface SidebarProps {
     className?: string;
