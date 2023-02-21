@@ -1,0 +1,19 @@
+name: screenshots testing
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  pipeline:
+    runs-on: windows-2019
+    strategy:
+      matrix:
+        node-version: [ 17.x ]
+
+    steps:
+      - name: build storybook
+        run: npm run storybook:build
+      - name: screenshot testing
+        run: npm run test:ui:ci
