@@ -1,11 +1,16 @@
 .app-link {
     color: var(--primary-color);
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .primary {
     color: var(--primary-color);
+    fill: var(--primary-color);
 }
 
 .secondary {
     color: var(--inverted-primary-color);
+    fill: var(--inverted-primary-color);
 }

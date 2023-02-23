@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
-import { Button, VariantButton } from './Button';
+import { Button, ButtonSize, ButtonVariant } from './Button';
 
 export default {
     title: 'shared/Button',
@@ -23,18 +23,67 @@ Primary.args = {
 export const Clear = Template.bind({});
 Clear.args = {
     children: 'Text',
-    variant: VariantButton.CLEAR,
+    variant: ButtonVariant.CLEAR,
 };
 
 export const Outline = Template.bind({});
 Outline.args = {
     children: 'Text',
-    variant: VariantButton.OUTLINE,
+    variant: ButtonVariant.OUTLINE,
+};
+
+export const OutlineSizeL = Template.bind({});
+OutlineSizeL.args = {
+    children: 'Text',
+    variant: ButtonVariant.OUTLINE,
+    size: ButtonSize.l,
+};
+
+export const OutlineSizeXL = Template.bind({});
+OutlineSizeXL.args = {
+    children: 'Text',
+    variant: ButtonVariant.OUTLINE,
+    size: ButtonSize.xl,
+};
+
+export const Background = Template.bind({});
+Background.args = {
+    children: 'Text',
+    variant: ButtonVariant.BACKGROUND,
+};
+
+export const BackgroundInverted = Template.bind({});
+BackgroundInverted.args = {
+    children: 'Text',
+    variant: ButtonVariant.BACKGROUND_INVERTED,
+};
+
+export const Square = Template.bind({});
+Square.args = {
+    children: '>',
+    variant: ButtonVariant.BACKGROUND_INVERTED,
+    square: true,
+};
+
+export const SquareSizeL = Template.bind({});
+SquareSizeL.args = {
+    children: '>',
+    variant: ButtonVariant.BACKGROUND_INVERTED,
+    square: true,
+    size: ButtonSize.l,
+};
+
+export const SquareSizeXL = Template.bind({});
+SquareSizeXL.args = {
+    children: '>',
+    variant: ButtonVariant.BACKGROUND_INVERTED,
+    square: true,
+    size: ButtonSize.xl,
 };
 
 export const OutlineDark = Template.bind({});
 OutlineDark.args = {
     children: 'Text',
-    variant: VariantButton.OUTLINE,
+    variant: ButtonVariant.OUTLINE,
 };
 OutlineDark.decorators = [ThemeDecorator(Theme.DARK)];

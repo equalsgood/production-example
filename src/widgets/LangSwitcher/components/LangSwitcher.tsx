@@ -1,11 +1,12 @@
 import { useTranslation } from 'react-i18next';
-import { Button, VariantButton } from 'shared/components/Button/Button';
+import { Button, ButtonVariant } from 'shared/components/Button/Button';
 
 interface LangSwitcherProps {
     className?: string;
+    short?: boolean;
 }
 
-export const LangSwitcher = ({ className }: LangSwitcherProps) => {
+export const LangSwitcher = ({ className, short }: LangSwitcherProps) => {
     const { t, i18n } = useTranslation();
 
     const toggle = async () => {
@@ -15,10 +16,10 @@ export const LangSwitcher = ({ className }: LangSwitcherProps) => {
     return (
         <Button
             className={className}
-            variant={VariantButton.CLEAR}
+            variant={ButtonVariant.CLEAR}
             onClick={toggle}
         >
-            {t('Language')}
+            {t(short ? 'Lang' : 'Language')}
         </Button>
     );
 };
