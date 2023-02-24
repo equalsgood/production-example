@@ -32,6 +32,12 @@ Outline.args = {
     variant: ButtonVariant.OUTLINE,
 };
 
+export const OutlineInverted = Template.bind({});
+OutlineInverted.args = {
+    children: 'Text',
+    variant: ButtonVariant.OUTLINE_INVERTED,
+};
+
 export const OutlineSizeL = Template.bind({});
 OutlineSizeL.args = {
     children: 'Text',
