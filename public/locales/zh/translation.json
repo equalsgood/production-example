@@ -5,5 +5,7 @@
   "Something went wrong": "出了些问题",
   "Reload the page": "重新加载页面",
   "Main": "主要的",
-  "About": "关于"
+  "About": "关于",
+  "increment": "增量",
+  "decrement": "递减"
 }

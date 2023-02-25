@@ -5,5 +5,7 @@
   "Something went wrong": "Something went wrong",
   "Reload the page": "Reload the page",
   "Main": "Main",
-  "About": "About"
+  "About": "About",
+  "increment": "increment",
+  "decrement": "decrement"
 }

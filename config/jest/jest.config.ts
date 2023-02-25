@@ -6,26 +6,16 @@
 import path from 'path';
 
 export default {
-    // All imported modules in your tests should be mocked automatically
-    // automock: false,
-
-    // Stop running tests after `n` failures
-    // bail: 0,
-
-    // The directory where Jest should store its cached dependency information
-    // cacheDirectory: "C:\\Users\\sophi\\AppData\\Local\\Temp\\jest",
-
-    // Automatically clear mock calls, instances and results before every test
+    globals: {
+        __IS_DEV__: true,
+    },
     clearMocks: true,
     testEnvironment: 'jsdom',
 
-    // An array of regexp pattern strings used to skip coverage collection
     coveragePathIgnorePatterns: [
         '\\\\node_modules\\\\',
     ],
 
-    // An array of directory names to be searched recursively up
-    // from the requiring module's location
     moduleDirectories: [
         'node_modules',
     ],
@@ -34,7 +24,6 @@ export default {
         '<rootDir>src',
     ],
 
-    // An array of file extensions your modules use
     moduleFileExtensions: [
         'js',
         'jsx',
@@ -44,12 +33,10 @@ export default {
         'node',
     ],
 
-    // The glob patterns Jest uses to detect test files
     testMatch: [
         '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)',
     ],
 
-    // The root directory that Jest should scan for tests and modules within
     rootDir: '../../',
 
     setupFilesAfterEnv: ['<rootDir>config/jest/setupTests.ts'],
@@ -100,9 +87,6 @@ export default {
     // A path to a module which exports an async function that
     // is triggered once after all test suites
     // globalTeardown: undefined,
-
-    // A set of global variables that need to be available in all test environments
-    // globals: {},
 
     // The maximum amount of workers used to run your tests.
     // Can be specified as % or a number. E.g. maxWorkers:
