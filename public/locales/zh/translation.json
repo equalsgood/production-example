@@ -6,6 +6,10 @@
   "Reload the page": "重新加载页面",
   "Main": "主要的",
   "About": "关于",
+  "Log in": "登录",
+  "Enter the user's name": "输入用户的名字",
+  "Enter the password": "输入密码",
+  "here": "这里",
   "increment": "增量",
   "decrement": "递减"
 }

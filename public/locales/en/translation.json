@@ -6,6 +6,10 @@
   "Reload the page": "Reload the page",
   "Main": "Main",
   "About": "About",
+  "Log in": "Log in",
+  "here": "here",
+  "Enter the user's name": "Enter the user's name",
+  "Enter the password": "Enter the password",
   "increment": "increment",
   "decrement": "decrement"
 }

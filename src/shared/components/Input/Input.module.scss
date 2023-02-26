@@ -1,0 +1,11 @@
+.input-wrapper {
+    display: flex;
+    gap: 5px;
+}
+
+.input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--primary-color);
+}
