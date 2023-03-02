@@ -1,20 +1,31 @@
 import { configureStore, ReducersMapObject } from '@reduxjs/toolkit';
 import { counterReducer } from 'entities/Counter';
 import { userReducer } from 'entities/User';
-import { loginReducer } from 'features/AuthByUserName';
+import { createReducerManager } from './reducerManadger';
 import { StateSchema } from './StateSchema';
 
 // For reusing purposes (in storybook / jest / etc.)
-export function createReduxStore(initialState?: StateSchema) {
-    const rootReducer: ReducersMapObject<StateSchema> = {
+export function createReduxStore(
+    initialState?: StateSchema,
+    asyncReducers?: ReducersMapObject<StateSchema>,
+) {
+    const rootReducers: ReducersMapObject<StateSchema> = {
+        ...asyncReducers,
         counter: counterReducer,
         user: userReducer,
-        loginForm: loginReducer,
     };
 
-    return configureStore<StateSchema>({
-        reducer: rootReducer,
+    const reducerManager = createReducerManager(rootReducers);
+
+    const store = configureStore<StateSchema>({
+        reducer: reducerManager.reduce,
         devTools: __IS_DEV__,
         preloadedState: initialState,
     });
+
+    // For reducer's lazy loading
+    // @ts-ignore
+    store.reducerManager = reducerManager;
+
+    return store;
 }
