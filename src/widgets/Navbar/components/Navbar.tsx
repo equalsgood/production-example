@@ -1,8 +1,7 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { memo, useCallback, useState } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import { Button, ButtonVariant } from 'shared/components/Button/Button';
-import { Modal } from 'shared/components/Modal/Modal';
 import { LoginModal } from 'features/AuthByUserName';
 import { useDispatch, useSelector } from 'react-redux';
 import { getUserAuthData, userActions } from 'entities/User';
@@ -12,7 +11,7 @@ interface NavbarProps {
     className?: string;
 }
 
-export const Navbar = ({ className }: NavbarProps) => {
+export const Navbar = memo(({ className }: NavbarProps) => {
     const dispatch = useDispatch();
     const { t } = useTranslation();
     const [isAuthModal, setIsAuthModal] = useState(false);
@@ -20,9 +19,6 @@ export const Navbar = ({ className }: NavbarProps) => {
 
     const openModalHandler = useCallback(() => setIsAuthModal(true), []);
     const closeModalHandler = useCallback(() => setIsAuthModal(false), []);
-    useEffect(() => {
-        if (authData) closeModalHandler();
-    }, [authData, closeModalHandler]);
 
     const logoutHandler = useCallback(() => {
         dispatch(userActions.logout());
@@ -61,4 +57,4 @@ export const Navbar = ({ className }: NavbarProps) => {
                 )}
         </>
     );
-};
+});

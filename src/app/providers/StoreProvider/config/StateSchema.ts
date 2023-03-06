@@ -4,12 +4,16 @@ import { LoginSchema } from 'features/AuthByUserName';
 import {
     AnyAction, CombinedState, EnhancedStore, Reducer, ReducersMapObject,
 } from '@reduxjs/toolkit';
+import { ProfileSchema } from 'entities/Profile';
 
 // reducers that aren't required is for optimization purposes
 export interface StateSchema {
     counter: CounterSchema,
     user: UserSchema,
+
+    // async reducers
     loginForm?: LoginSchema,
+    profile?: ProfileSchema,
 }
 
 // For reducer's lazy loading

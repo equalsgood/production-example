@@ -5,10 +5,19 @@
   "comments": [
     { "id": "1", "body": "some comment", "postId": "1" }
   ],
-  "profile": { "name": "typicode" },
   "users": [{
     "id": "1",
     "username": "admin",
     "password": "123"
-  }]
+  }],
+  "profile": {
+    "first": "Artem",
+    "lastname": "Babak",
+    "age": "22",
+    "currency": "UAH",
+    "country": "Ukraine",
+    "city": "Dnipro",
+    "username": "admin",
+    "avatar": "https://img.freepik.com/free-vector/mysterious-mafia-man-smoking-cigarette_52683-34828.jpg?w=826&t=st=1678110199~exp=1678110799~hmac=b8a3c1dfaee8ca8a037b17bb602e16809686dff3da92b57b2d4a7ccdda29febe"
+  }
 }
