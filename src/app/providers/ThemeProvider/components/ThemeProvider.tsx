@@ -17,7 +17,8 @@ export const ThemeProvider:FC<ThemeProviderProps> = (props) => {
         setTheme,
     }), [theme]);
 
-    document.querySelector('#root').className = theme;
+    const root = document.querySelector('#root');
+    if (root) root.className = theme;
     return (
         <ThemeContext.Provider value={defaultProps}>
             {children}

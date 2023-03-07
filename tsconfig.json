@@ -8,6 +8,7 @@
     "jsx": "react-jsx", // remove message about import React from 'react'
     // Позволяет компилятору обрабатывать не только ts, но и js файлы
     "allowJs": true,
+    "strict": true,
     "moduleResolution": "node",
     // esModuleInterop позволяет использовать импорты common js(require) как обычные импорты
     "esModuleInterop": true,
