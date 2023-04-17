@@ -1,6 +1,16 @@
 {
-  "Profile":  "Profile",
-  "Edit":  "Edit",
-  "Your name":  "Your name",
-  "Your lastname":  "Your lastname"
+  "Profile":  "轮廓",
+  "Edit":  "编辑",
+  "Cancel":  "取消",
+  "Save":  "节省",
+  "Your name":  "你的名字",
+  "Your lastname":  "你的姓氏",
+  "Your age":  "你的年龄",
+  "City": "城市",
+  "Avatar link": "头像链接",
+  "Username": "用户名",
+  "Select currency": "选择货币",
+  "Select country": "选择国家",
+  "An error occurred while loading the profile": "加载配置文件时出错",
+  "Try refreshing the page": "尝试刷新页面"
 }

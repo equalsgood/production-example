@@ -6,14 +6,26 @@
     gap: 30px;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .data {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.loading,
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.avatar-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.editing {
+    border: 2px solid var(--inverted-primary-color);
 }

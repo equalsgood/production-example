@@ -1,11 +1,13 @@
 .title {
     font: var(--font-l);
     color: var(--primary-color);
+    text-align: inherit;
 }
 
 .text {
     font: var(--font-m);
     color: var(--secondary-color);
+    text-align: inherit;
 }
 
 .error .title {
@@ -14,4 +16,16 @@
 
 .error .text {
     color: var(--red-dark);
+}
+
+.left {
+    text-align: start;
+}
+
+.right {
+    text-align: end;
+}
+
+.center {
+    text-align: center;
 }
