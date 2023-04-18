@@ -12,5 +12,10 @@
   "Select currency": "Select currency",
   "Select country": "Select country",
   "An error occurred while loading the profile": "An error occurred while loading the profile",
-  "Try refreshing the page": "Try refreshing the page"
+  "Try refreshing the page": "Try refreshing the page",
+  "Server error on save": "Server error on save",
+  "First and last name are required": "First and last name are required",
+  "Incorrect age": "Incorrect age",
+  "Incorrect country": "Incorrect country",
+  "Data not specified": "Data not specified"
 }

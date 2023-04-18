@@ -12,5 +12,10 @@
   "Select currency": "选择货币",
   "Select country": "选择国家",
   "An error occurred while loading the profile": "加载配置文件时出错",
-  "Try refreshing the page": "尝试刷新页面"
+  "Try refreshing the page": "尝试刷新页面",
+  "Server error on save": "保存时服务器错误",
+  "First and last name are required": "名字和姓氏是必需的",
+  "Incorrect age": "年龄不正确",
+  "Incorrect country": "国家不正确",
+  "Data not specified": "未指定数据"
 }
